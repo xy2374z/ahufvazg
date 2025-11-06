@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>My JS App</title>
-  </head>
-  <body>
-    <h1>Hello from JavaScript!</h1>
-    <button onclick="sayHi()">Click me!</button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My JS App</title>
+  <meta name="theme-color" content="#007aff">
 
-    <script>
-      function sayHi() {
-        alert("Hi there! 👋");
-      }
-    </script>
-  </body>
+  <link rel="stylesheet" href="style.css"">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <div id="loading-screen">
+    <h2>Loading...</h2>
+  </div>
+
+  
+  <div id="main-content" style="display:none;">
+   <h1>Test</h1>
+   <button id="hiButton">Button</button>
+
+  <!-- Clickable circle -->
+  <div id="circle"></div>
+
+  <p>Circle presses: <span id="counter">0</span></p>
+
+</div>
+
+ <script src="script.js"></script>
+</body>
 </html>
